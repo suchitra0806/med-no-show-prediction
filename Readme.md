@@ -1,16 +1,15 @@
-# 🏥 healthpredict: medical appointment no-show analysis
+# 🏥 HealthPredict: Medical Appointment No-Show Analysis
 
-this project uses machine learning to predict the likelihood of a patient missing their medical appointment. by identifying potential "no-shows," healthcare providers can optimize scheduling and improve patient care delivery.
+This project uses machine learning to predict the likelihood of a patient missing their medical appointment. By identifying potential "no-shows," healthcare providers can optimize scheduling and improve patient care delivery.
 
-## 🚀 project overview
-medical no-shows cost the healthcare system billions and delay care for patients in need. i built a **random forest classifier** to analyze 110k+ records and predict attendance based on patient demographics and appointment history.
+## 🚀 Project Overview
+Medical no-shows cost the healthcare system billions and delay care for patients in need. I built a **random forest classifier** to analyze 110k+ records and predict attendance based on patient demographics and appointment history.
 
-## 🛠️ tech stack
-- **language:** python
-- **libraries:** pandas, scikit-learn, matplotlib, seaborn
-- **environment:** google colab / vscode
+## 🛠️ Tech Stack
+- **Language:** Python
+- **Libraries:** Pandas, Scikit-learn, Matplotlib, Seaborn
 
-## 📈 key findings & model optimization
-- **feature importance:** the most significant predictor was `WaitTime` (the number of days between booking and the actual appointment).
-- **handling imbalance:** the original dataset had far more "shows" than "no-shows." i implemented `class_weight='balanced'` to ensure the model didn't ignore the minority class.
-- **the results:** by tuning the model, i increased the **recall for no-shows by 63%**, significantly improving the model's clinical utility.
+## 📈 Key Findings & Model Optimization
+- **Feature Importance:** The most significant predictor was `WaitTime` (the number of days between booking and the actual appointment).
+- **Handling Imbalance:** The original dataset had far more "shows" than "no-shows." I implemented `class_weight='balanced'` to ensure the model didn't ignore the minority class.
+- **Results:** By tuning the model,  increased the **recall for no-shows by 63%**, significantly improving the model's clinical utility.
